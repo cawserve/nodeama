@@ -4,7 +4,7 @@ var app=express();
 var server=require('http').createServer(app);
 var session=require('express-session');
 var io=require('socket.io').listen(server);
-var file=require('fs'),temp = require('temp').track(),zipper=require('adm-zip'),storage=require('sqlite3').verbose();
+var file=require('fs'),temp = require('temp').track(),zipper=require('adm-zip');
 
 console.log("\n\n\n SSSSSS   EEEEEE  N      N   DDDDDD  M      M   EEEEEE   PPPPPP   RRRRRR   OOOOOO\nS      S E        N      N  D      D  M\n\n\n");
 //var zip=new zipper();
